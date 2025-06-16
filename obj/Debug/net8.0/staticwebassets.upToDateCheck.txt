@@ -1,0 +1,15 @@
+wwwroot\dashboard.html
+wwwroot\finance.html
+wwwroot\images\gerbera.png
+wwwroot\images\kaktusz.png
+wwwroot\images\liliom.png
+wwwroot\images\pipacs.png
+wwwroot\images\rozsa.png
+wwwroot\images\tulipan.png
+wwwroot\index.html
+wwwroot\orders.html
+wwwroot\products.html
+wwwroot\reports.html
+wwwroot\schema.sql
+wwwroot\style.css
+wwwroot\main.js
