@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📞 Elérhetőségek – Virágbolt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: #fdfdfd;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .custom-btn {
+            background-color: #2c2f33;
+            color: white;
+            border: none;
+        }
+
+        .custom-btn:hover {
+            background-color: #1a1d20;
+            color: white;
+        }
+
+        .section-heading {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .list-group-item {
+            background-color: #f8f9fa;
+            border-left: 4px solid #28a745;
+        }
+
+        iframe {
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 720px;
+        }
+
+        .justified {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="dashboard.html">🌸 Virágbolt</a>
+            <span class="navbar-text text-white">Elérhetőségek</span>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <h1 class="section-heading">📞 Kapcsolat & Elérhetőségek</h1>
+
+        <p class="mt-4 justified">
+            A <strong>Virágbolt</strong> egy családi vállalkozásként indult Szlovákia szívében, amely több mint 15 éve elkötelezetten szolgálja ki vásárlóit.
+            Boltunk fő célkitűzése, hogy minden ügyfelünk számára különleges és egyedi virágélményt nyújtsunk, legyen szó születésnapról, esküvőről, ballagásról vagy egyszerű kedvességről.
+            Friss virágainkat gondosan válogatjuk megbízható helyi és nemzetközi beszállítóktól, figyelve a szezonális kínálatra és a minőségre egyaránt.
+        </p>
+
+        <p class="mt-3 justified">
+            Szakértő csapatunk szívesen segít személyre szabott virágkompozíciók elkészítésében is, és tanácsot ad az eseményhez leginkább illő virágfajták kiválasztásában.
+            A Virágbolt nem csupán egy üzlet, hanem egy hely, ahol a virágokkal való szeretet és odafigyelés minden csokorban visszaköszön.
+        </p>
+
+        <p class="mt-3">Keressen minket bizalommal az alábbi elérhetőségeken:</p>
+
+        <ul class="list-group list-group-flush mt-3">
+            <li class="list-group-item"><strong>📍 Cím:</strong> 9876 Virág utca 12., Pozsony, Szlovákia</li>
+            <li class="list-group-item"><strong>📞 Telefonszám:</strong> +421 905 123 456</li>
+            <li class="list-group-item"><strong>✉️ E-mail:</strong> info@viragbolt.sk</li>
+            <li class="list-group-item"><strong>🕒 Nyitvatartás:</strong> H-P: 8:00 - 17:00, Sz: 9:00 - 13:00</li>
+        </ul>
+
+        <div class="mt-4">
+            <iframe src="https://www.google.com/maps?q=Pozsony+Virág+utca+12&output=embed"
+                    style="width: 100%; height: 300px;"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <a id="contactBackButton" href="dashboard.html" class="btn custom-btn mt-4">⬅ Vissza a vezérlőpulthoz</a>
+    </div>
+
+</body>
+</html>
