@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virágbolt – Virágbolt Vállalati Rendszer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">🌸 Virágbolt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="hero text-center">
+        <div class="container">
+            <h1 class="display-4">Virágbolt Vállalati Információs Rendszer</h1>
+            <p class="lead">Kezeld a termékeket, rendeléseket és pénzügyeket egy helyen.</p>
+            <a id="loginText" href="#register" class="btn btn-light btn-lg mt-4">Belépés a rendszerbe</a>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 style="display: none;" id="title" class="section-title">📋 Funkciók</h2>
+        <ul class="list-group">
+            <li style="display: none;" id="productLink" class="list-group-item"><a href="products.html" class="text-decoration-none text-dark">🌼 Termékkínálat (virágok, dekorációk)</a></li>
+            <li style="display: none;" id="orderLink" class="list-group-item"><a href="orders.html" class="text-decoration-none text-dark">📦 Rendeléskezelés</a></li>
+            <li style="display: none;" id="financeLink" class="list-group-item"><a href="finance.html" class="text-decoration-none text-dark">💰 Pénzügyi kimutatások (bevétel, kiadás, nyereség)</a></li>
+            <li style="display: none;" id="reportLink" class="list-group-item"><a href="reports.html" class="text-decoration-none text-dark">📊 Statisztikák és riportok</a></li>
+        </ul>
+
+        <h2 class="section-title" id="register" style="display:none;">📝 Regisztráció</h2>
+        <form id="registerForm" style="display:none;">
+            <div class="mb-3">
+                <label for="reg-username" class="form-label">Felhasználónév</label>
+                <input type="text" class="form-control" id="reg-username" placeholder="Adja meg a felhasználónevét">
+            </div>
+            <div class="mb-3">
+                <label for="reg-password" class="form-label">Jelszó</label>
+                <input type="password" class="form-control" id="reg-password" placeholder="Adja meg a jelszavát">
+            </div>
+            <div class="mb-3">
+                <label for="reg-role" class="form-label">Szerep</label>
+                <select class="form-select" id="reg-role">
+                    <option value="customer">Vásárló</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Regisztráció</button>
+        </form>
+        <p class="mt-3" style="display:none;" id="backToLoginP">
+            Már van fiókod?
+            <button id="showLogin" class="btn btn-link p-0 align-baseline">Jelentkezz be!</button>
+        </p>
+
+        <h2 class="section-title" id="login">🔐 Belépés</h2>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="username" class="form-label">Felhasználónév</label>
+                <input type="text" class="form-control" id="username" placeholder="Felhasználónév">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Jelszó</label>
+                <input type="password" class="form-control" id="password" placeholder="Jelszó">
+            </div>
+            <button type="submit" class="btn btn-success">Belépés</button>
+        </form>
+        <p class="mt-3">
+            Még nincs fiókod?
+            <button id="showRegister" class="btn btn-link p-0 align-baseline">Regisztrálj itt!</button>
+        </p>
+
+    </div>
+
+    <footer class="text-center text-muted mt-5 mb-3">
+        <small>&copy; 2025 Virágbolt – Minden jog fenntartva.</small>
+    </footer>
+</body>
+</html>
